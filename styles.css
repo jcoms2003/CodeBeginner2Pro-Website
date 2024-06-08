@@ -20,6 +20,7 @@ body {
 /* Nav bar style */
 .navbar {
   background-color: #3e3030;
+  top: 0;
   position: sticky;
 }
 .navbar a {
@@ -30,6 +31,9 @@ body {
   position: sticky;
 }
 .navbar a:hover {
+  background-color: #130e0e;
+}
+.active {
   background-color: #130e0e;
 }
 /* Clear floats after the columns */
@@ -62,6 +66,7 @@ body {
   background: #575741;
   margin-top: 20px;
 }
+
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftCol,
@@ -72,11 +77,15 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 550px) {
   .navbar a {
     float: none;
     width: 100%;
     text-align: center;
+  }
+  .navbar {
+    background-color: #3e3030;
+    position: relative;
   }
 }
 /* center class */
