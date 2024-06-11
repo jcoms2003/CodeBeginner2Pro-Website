@@ -76,6 +76,17 @@ body {
   border: 2px solid #013328;
   border-radius: 15px 30px;
 }
+#img4 {
+  width: 40%;
+  float: left;
+  margin-right: 15px;
+  border: 2px solid #013328;
+  border-radius: 180px;
+}
+#img4:hover {
+  border: 2px dotted #013328;
+}
+
 /* image fill */
 #img2 {
   width: 100%;
@@ -114,6 +125,23 @@ body {
     position: relative;
   }
 }
+/* animation   */
+@keyframes links {
+  0% {
+    color: #ff0000;
+  }
+  25% {
+    color: #ffff00;
+  }
+  50% {
+    color: #0000ff;
+  }
+  100% {
+    color: #008000;
+  }
+}
+@keyframes {
+}
 /* stlye classes */
 .center {
   text-align: center;
@@ -123,4 +151,19 @@ body {
 }
 .justify {
   text-align: justify;
+}
+/* link styles */
+p a,
+dd a {
+  text-decoration: none;
+  color: #37a42b;
+}
+p a:hover,
+dd a:hover {
+  font-size: 1.05em;
+  text-decoration: underline;
+  animation-name: links;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
