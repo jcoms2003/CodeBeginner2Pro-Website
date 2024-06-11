@@ -112,7 +112,11 @@ body {
     padding: 0;
   }
 }
-
+@media screen and (min-width: 1000px) {
+  p {
+    font-size: 18px;
+  }
+}
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 550px) {
   .navbar a {
@@ -121,7 +125,7 @@ body {
     text-align: center;
   }
   .navbar {
-    background-color: #3e3030;
+    background-color: #2f365f;
     position: relative;
   }
 }
