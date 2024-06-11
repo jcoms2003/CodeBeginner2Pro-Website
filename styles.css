@@ -152,6 +152,10 @@ body {
 .justify {
   text-align: justify;
 }
+.funFact {
+  font-family: "Belanosima";
+  font-size: 18px;
+}
 /* link styles */
 p a,
 dd a {
